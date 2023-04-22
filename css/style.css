@@ -125,6 +125,8 @@ footer a:hover {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-family: "Zilla Slab", serif;
+  font-size: 15px;
 }
 
 /* Change background color of buttons on hover */
