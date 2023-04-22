@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Final Syntesis Project - 10th Grade</title>
+          
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tab1.css" />
+    <link rel="stylesheet" href="css/tab2.css" />
+    <link rel="stylesheet" href="css/tab3.css" />
+    <link rel="stylesheet" href="css/tab4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto+Mono:wght@500&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header>
+      <h1 id="main-title">SYNTESIS FINAL PROJECT</h1>
+    </header>
+
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab1')"
+        id="tab1-button"
+      >
+        Compact Objects
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab2')"
+        id="tab2-button"
+      >
+        Gravitational Waves Detection
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab3')"
+        id="tab3-button"
+      >
+        LIGO and Virgo Collaborations
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab4')"
+        id="tab2-button"
+      >
+        Cybergraphy
+    </div>
+
+    <!-- Tab content -->
+    <div id="tab1" class="tabcontent"></div>
+    <div id="tab2" class="tabcontent"></div>
+    <div id="tab3" class="tabcontent"></div>
+    <div id="tab4" class="tabcontent"></div>
+    <script src="js/tabs.js"></script>
+
+    <script>
+      const texts = ["tab1", "tab2", "tab3"];
+      for (let i = 0; i < texts.length; i++) {
+        $("#" + texts[i] + "-button").click(function () {
+          $("#" + texts[i]).load("html/" + texts[i] + ".html");
+        });
+      }
+    </script>
+
+    <script>
+      $("#tab1-button").click();
+    </script>
+
+    <footer>
+      <section>
+        <img src="imagenes/others/escudocolegio.webp" id="escudocolegio_img" style="float: left">
+        <a href="#main-title">
+          Go up <br />
+          Contact us:</a
+        >
+        <br /><br/>
+        <a class="correos" href="mailto:anasofia.avalosgomez@bethlemitasbello.edu.co"
+        >anasofia.avalosgomez@bethlemitasbello.edu.co<a/>
+        <br/>
+        <a class="correos" href="mailto:laura.castromontoya@bethlemitasbello.edu.co" 
+        >laura.castromontoya@bethlemitasbello.edu.co<a/>
+        <br/>
+        <a class="correos" href="mailto:mariavictoria.gaviria@bethlemitasbello.edu.co"
+          >mariavictoria.gaviria@bethlemitasbello.edu.co</a>
+        </section>
+      <br />
+      Creative commons licence
+    </footer>
+  </body>
+</html>
